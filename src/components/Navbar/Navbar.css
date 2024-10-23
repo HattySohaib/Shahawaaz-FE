@@ -1,0 +1,174 @@
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid; */
+    padding: 0 1.5rem;
+    height: 9vh;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.logo {
+    font-family: Poppins;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 500;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.menu-open {
+    width: 1.5rem;
+
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.menu-text {
+    font-size: 0.8rem;
+}
+
+
+.mobile-nav {
+    position: relative;
+}
+
+.mobile-nav-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255);
+    /* Slightly transparent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.4s ease;
+    z-index: -1;
+}
+
+.mobile-nav-items.open {
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 999;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn img {
+    width: 24px;
+    /* Adjust as needed */
+    height: 24px;
+    /* Adjust as needed */
+}
+
+.mobile-nav-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-nav-items li {
+    padding: 2rem 0;
+    /* Adjust as needed */
+    border-bottom: 1px solid #ccc;
+    /* Optional: for divider lines */
+}
+
+.mobile-nav-items li:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav-items a {
+    font-family: Manrope;
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    /* Adjust as needed */
+    font-size: 1.2rem;
+    padding: 0.25rem 2rem;
+    /* Adjust for larger text */
+}
+
+.mobile-nav-items a:hover {
+    color: #929292;
+    /* Adjust for hover effect */
+}
+
+.mobile-nav-items a.active {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    box-shadow: 3px 3px 0 0 black;
+    color: rgb(0, 0, 0);
+    border-radius: 2rem;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.desktop-nav-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.desktop-nav-list a {
+    text-decoration: none;
+    color: black;
+    font-family: Manrope;
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+    border-radius: 16px;
+}
+
+.desktop-nav-list a.active {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0 0 black;
+}
+
+.desktop-btns {
+    display: none;
+}
+
+@media (min-width: 800px) {
+
+    .desktop-nav,
+    .desktop-btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+}

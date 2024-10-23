@@ -1,0 +1,137 @@
+.banner-container img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.blogread-title {
+    font-size: 2rem;
+    font-family: Manrope;
+    padding-bottom: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.data-container {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 0.8fr;
+    height: 100%;
+}
+
+.blogread-category {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(87, 87, 87);
+    text-align: center;
+}
+
+
+
+.blog-content {
+    padding: 3rem 1.5rem;
+}
+
+
+.blogread-info {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    padding: 1rem;
+}
+
+
+.left-pane {
+    height: fit-content;
+    position: sticky;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.right-pane {
+    height: fit-content;
+    position: sticky;
+    top: 9vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.right-pane .dp img {
+    width: 6rem;
+}
+
+.right-pane .about-para {
+    font-size: 1rem;
+    background-color: rgb(247, 247, 247);
+    margin-top: 1rem;
+}
+
+.left-pane .blog-title {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(245, 245, 245);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.rec-btn {
+    display: none;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.25rem 1rem;
+    width: fit-content;
+
+    margin: 1rem auto;
+    margin-bottom: 0;
+
+    border-radius: 15px;
+}
+
+@media (max-width:800px) {
+
+    .data-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-content {
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+    }
+
+    .blog-content img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .left-pane {
+        position: absolute;
+        width: 100%;
+        transform: translateX(-100%);
+        background-color: white;
+        transition: all 0.3s;
+    }
+
+    .right-pane {
+        border-top: 1px solid rgb(105, 105, 105);
+    }
+
+    .rec-btn {
+        display: block;
+    }
+
+    .show {
+        transform: translateX(0);
+        transition: all 0.3s;
+    }
+}

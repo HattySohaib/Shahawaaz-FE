@@ -1,0 +1,156 @@
+.blog-card {
+    width: auto;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.204);
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    transition: all 0.2s;
+}
+
+.blog-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-card-title {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 700;
+}
+
+.blog-card-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #707070;
+    font-size: 0.8rem;
+
+    border-top: 1px solid #707070;
+    padding-top: 0.5rem;
+}
+
+.blog-card-preview {
+    color: rgb(47, 47, 47);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.blog-card-extras {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+}
+
+.blog-card-category {
+    font-size: 0.75rem;
+    color: #164AFF;
+    background-color: #cddfff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.read-more-blog-btn {
+    background: none;
+    border: none;
+    color: #164AFF;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    text-decoration: none;
+}
+
+.read-more-blog-btn img {
+    width: 1.2rem;
+    background-color: #cddfff;
+    border-radius: 50%;
+}
+
+.blog-card-actions {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    border-radius: 12px;
+    /* height: 1.5rem; */
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.blog-action {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    color: #323232;
+    border-right: 1px solid gray;
+    padding: 0.25rem 0.75rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: all 0.25s;
+}
+
+.blog-action:hover {
+    transform: translateY(-2px);
+    transition: all 0.25s;
+}
+
+.blog-card:hover .blog-card-actions {
+    max-height: 1.5rem;
+    transition: all 0.25s;
+}
+
+.blog-action img {
+    width: 1.1rem;
+}
+
+.blog-action:nth-child(3) {
+    border-right: none;
+}
+
+.blog-card-img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+
+.blog-card:hover .blog-card-img {
+    transition: all 0.4s;
+}
+
+.nav-link {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.nav-link .btn {
+    width: 100%;
+}

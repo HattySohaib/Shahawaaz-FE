@@ -1,0 +1,97 @@
+/* Services Page Styles */
+.services-page {
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.hero {
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.hero h1 {
+    font-family: 'Times New Roman';
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.turn-your-website,
+.we-help-with,
+.industries,
+.process {
+    margin: 3rem 0;
+}
+
+h2 {
+    font-family: 'Times New Roman';
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-cta {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: all 0.25s;
+}
+
+.service-cta:hover {
+    outline: 1px solid black;
+    background: none;
+    color: black;
+
+    transition: all 0.25s;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (min-width: 800px) {
+    .services-page {
+        padding: 0 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .service-cta {
+        padding: 0.5rem 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+}

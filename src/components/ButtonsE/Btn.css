@@ -1,0 +1,106 @@
+.btn {
+    border: none;
+    padding: 0.5rem;
+    color: #424070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 450;
+    border-radius: 6px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.btn-icon {
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    color: #292652;
+}
+
+.transparent-btn {
+    background: none;
+}
+
+.gradient-btn {
+    color: white;
+    background: linear-gradient(90deg, #00D1FF, #8F00FF);
+    width: 100%;
+    font-weight: 400;
+}
+
+.gradient-btn:hover {
+    color: aliceblue;
+}
+
+.colored-btn {
+    background-color: #EBEEFF;
+}
+
+.kebab-btn {
+    width: 2.5rem;
+    background-color: white;
+}
+
+/* Banner Upload Button */
+.banner-input {
+    display: none;
+}
+
+.banner-label {
+    cursor: pointer;
+    color: black;
+}
+
+.banner-label:hover {
+    box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.15);
+}
+
+.file-upload-btn,
+.insert-img-btn,
+.save-btn,
+.publish-btn {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.104);
+    border-radius: 8px;
+
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.file-upload-btn:hover,
+.insert-img-btn:hover,
+.save-btn:hover,
+.publish-btn:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.059);
+}
+
+
+
+.banner-btn-icon,
+.btn-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0;
+}
+
+#save-btn {
+    padding: 0 1rem;
+    height: 2.5rem;
+    background-color: #F3F4F6;
+}
+
+#publish-btn {
+    padding: 0 1rem;
+    height: 2.5rem;
+    background-color: #1c1c1c;
+    color: white;
+}

@@ -1,0 +1,111 @@
+.featured-card {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.featured-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #000000;
+}
+
+.featured-card img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.featured-card-data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+}
+
+.featured {
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.header {
+    font-size: 2rem;
+    color: white;
+}
+
+.preview {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+}
+
+.icon-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.arrow-icon {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.read-btn {
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: all 0.3s;
+
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.read-btn span {
+    font-size: 1rem;
+}
+
+.read-btn:hover {
+    background-color: #000000;
+    color: white;
+    transition: all 0.3s;
+}
+
+@media (min-width: 800px) {
+    .featured-card {
+        height: 70vh;
+    }
+
+    .featured {
+        font-size: 1rem;
+    }
+
+    .header {
+        font-size: 3rem;
+        width: 80%;
+    }
+
+    .preview {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+}

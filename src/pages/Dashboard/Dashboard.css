@@ -1,0 +1,15 @@
+#dashboard {
+    padding: 1rem;
+}
+
+.recents-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 0.33fr));
+    grid-gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.dropdowns {
+    display: flex;
+    gap: 1rem;
+}
