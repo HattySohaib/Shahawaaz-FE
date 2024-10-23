@@ -5,12 +5,16 @@
     align-items: center;
     /* border: 1px solid; */
     padding: 0 1.5rem;
-    height: 9vh;
-    background-color: white;
+    height: 10vh;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 2000;
+
+    background-color: rgb(255, 255, 255);
+
+
+    border-bottom: 1px solid black;
 }
 
 .logo {
@@ -121,9 +125,9 @@
 .mobile-nav-items a.active {
     background-color: rgb(255, 255, 255);
     border: 1px solid;
-    box-shadow: 3px 3px 0 0 black;
+    box-shadow: 2px 2px 0 0 black;
     color: rgb(0, 0, 0);
-    border-radius: 2rem;
+    border-radius: 8px;
 }
 
 .desktop-nav {
@@ -136,35 +140,30 @@
     justify-content: center;
     align-items: center;
     list-style-type: none;
+
 }
 
 .desktop-nav-list a {
     text-decoration: none;
     color: black;
-    font-family: Manrope;
+    font-family: Poppins;
     font-size: 1rem;
     padding: 0.25rem 1rem;
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 .desktop-nav-list a.active {
     background-color: white;
     color: black;
     border: 1px solid black;
-    box-shadow: 3px 3px 0 0 black;
+    box-shadow: 2px 2px 0 0 black;
 }
 
-.desktop-btns {
-    display: none;
-}
 
 @media (min-width: 800px) {
 
-    .desktop-nav,
-    .desktop-btns {
+    .desktop-nav {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .mobile-nav {

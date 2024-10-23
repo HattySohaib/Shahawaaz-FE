@@ -17,9 +17,7 @@ function Blogs() {
   return (
     <div id="blogs-page">
       <div className="header">
-        <h1>
-          Recent <br /> Blog Posts.
-        </h1>
+        <h1>Recent Blog Posts.</h1>
       </div>
       <div className="blogcards-container">
         {!published.length && <p className="blank-text">No records found.</p>}

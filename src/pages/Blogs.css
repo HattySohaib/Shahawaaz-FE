@@ -5,6 +5,6 @@
 .blogcards-container {
     padding-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 0.2fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 1.2rem;
 }

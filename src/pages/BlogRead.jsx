@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 
 import "./BlogRead.css";
 import dp from "../assets/dp.jpg";
-import Footer from "../components/Footer/Footer";
 
 function BlogRead() {
   const { id } = useParams();

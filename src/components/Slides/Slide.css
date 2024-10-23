@@ -38,15 +38,18 @@
     font-size: 0.8rem;
 }
 
-.header {
+.featured-card .header {
     font-size: 2rem;
     color: white;
+    font-family: Poppins;
+    font-weight: 400;
 }
 
 .preview {
     font-size: 0.9rem;
-    color: white;
-    font-weight: 500;
+    color: rgb(211, 211, 211);
+    font-weight: 400;
+    font-family: Poppins;
 }
 
 .icon-wrapper {
@@ -105,7 +108,7 @@
     }
 
     .preview {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         width: 80%;
     }
 }

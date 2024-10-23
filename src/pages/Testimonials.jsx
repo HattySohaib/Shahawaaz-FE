@@ -3,7 +3,7 @@ import "./Testimonials.css";
 function Testimonials() {
   return (
     <div className="testimonials">
-      <h3>Testimonials from my clients.</h3>
+      <h3 className="section-title">Testimonials from my clients.</h3>
       <div className="testimonial">
         <p className="testimonial-msg">
           Sahabaj's writings have a wonderful fluency. His pieces on

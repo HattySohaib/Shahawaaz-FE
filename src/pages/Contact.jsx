@@ -5,9 +5,7 @@ function Contact() {
   return (
     <div className="contact">
       <div className="header">
-        <h1>
-          You Can Reach <br /> Me Through
-        </h1>
+        <h1>You Can Reach Me Through</h1>
       </div>
       <div className="contact-details">
         <h2>

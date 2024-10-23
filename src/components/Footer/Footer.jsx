@@ -15,10 +15,7 @@ const Footer = () => {
           <p className="footer-subtext">
             Drop a message or connect with me on social platforms.
           </p>
-          <div className="email-form">
-            <input type="text" placeholder="Message" />
-            <button type="submit">Send</button>
-          </div>
+
           <div className="social">
             <a
               target="_blank"

@@ -7,9 +7,7 @@ function About() {
   return (
     <div id="about">
       <div className="header">
-        <h1>
-          About <br /> the Writer.
-        </h1>
+        <h1>About the Writer.</h1>
       </div>
       <div className="profile">
         <div className="dp">
