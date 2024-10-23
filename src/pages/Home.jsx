@@ -27,7 +27,7 @@ function Home() {
     <div id="hero">
       <div id="hero-top">
         <h1 className="header-title">
-          Content Marketing for <br /> Solar Power Businesses.
+          Content Marketing <br /> for Solar Power Businesses.
         </h1>
         <p className="header-subtitle">
           We help Solar Companies get customers through their website. You want

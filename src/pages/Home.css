@@ -86,6 +86,7 @@
 .sign-up-form {
     text-align: center;
     margin: 20px 0;
+    max-width: 100%;
 }
 
 .input {
@@ -193,6 +194,10 @@
 
     .hero-bottom {
         padding: 1rem;
+    }
+
+    .header-title {
+        font-size: 2.5rem;
     }
 
     .section-title {
